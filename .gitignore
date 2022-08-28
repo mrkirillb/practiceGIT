@@ -1,0 +1,20 @@
+build/
+# папка build, не файлы build
+
+*.jar
+!module2.jar
+#игнорируем все файлы с расширением .jar, кроме module2.jar
+
+/resources/application-local.properties
+# игнорируем файл настроек
+
+.idea/
+# игнорируем папку .idea полностью
+
+/.idea_copy/*
+!/.idea_copy/workspace.xml
+# игнорируем папку .idea_copy, кроме файла workspace.xml
+
+**/build/
+!**/build/module2.jar
+# игнорируем все папки build, кроме build с файлом module2.jar
